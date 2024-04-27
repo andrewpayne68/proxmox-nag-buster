@@ -1,5 +1,5 @@
 ## proxmox-nag-buster 
-Forkedd from https://github.com/foundObjects/pve-nag-buster
+Forked from https://github.com/foundObjects/pve-nag-buster
 
 `pve-nag-buster` is a dpkg hook script that persistently removes license nags
 from Proxmox VE 6.x and up. Install it once and you won't see another license
@@ -45,7 +45,7 @@ chmod +x install.sh && ./install.sh
 
 ### Notes:
 
-#### Why is there base64 in my peanut-butter?
+#### Why is there base64?
 
 For convenience the install script also contains a base64 encoded copy of the
 hook script, this makes installation possible without access to github or a
@@ -55,10 +55,6 @@ To inspect the base64 encoded script run `./install.sh --emit`; this dumps the
 encoded copy to stdout and quits. To install using the stored copy just run
 `sudo ./install.sh --offline`, no internet required.
 
-### Thanks to:
-
-- John McLaren for his [blog post](https://www.reddit.com/user/seaqueue) documenting the web gui patch.
-- [Marlin Sööse](https://github.com/msoose) for the update for PVE 6.3+
 
 ### Contact:
 
