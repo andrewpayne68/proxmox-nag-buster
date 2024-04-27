@@ -23,30 +23,24 @@ The installer installs the dpkg hook script, adds the pve-no-subscription repo l
 and calls the hook script once. There are no external dependencies beyond the base
 packages installed with PVE by default.
 
+SSH in as root, no need for sudo.
+
 ### Installation
 ```sh
 wget https://raw.githubusercontent.com/foundObjects/pve-nag-buster/master/install.sh
-
-# Always read scripts downloaded from the internet before running them with sudo
-sudo bash install.sh
-
-# or ..
-chmod +x install.sh && sudo ./install.sh
 ```
-
-With Git:
+# Always read scripts downloaded from the internet before running them as root or with sudo
 ```sh
-git clone https://github.com/foundObjects/pve-nag-buster.git
-
-# Always read scripts downloaded from the internet before running them with sudo
-cd pve-nag-buster && sudo ./install.sh
+chmod +x install.sh && ./install.sh
 ```
 
 ### Uninstall:
 ```sh
-sudo ./install.sh --uninstall
-# remove /etc/apt/sources.list.d/pve-no-subscription.list if desired
+./install.sh --uninstall
 ```
+# remove /etc/apt/sources.list.d/pve-no-subscription.list if desired
+
+Reboot the Proxmox Server
 
 ### Notes:
 
