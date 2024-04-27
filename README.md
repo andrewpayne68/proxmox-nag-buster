@@ -12,7 +12,7 @@ means. High quality open source software like Proxmox needs our support!
 
 Last updated for: pve-manager/6.4-4/337d6701 (running kernel: 5.4.106-1-pve)
 
-### How does it work?
+#### How does it work?
 
 The included hook script removes the "unlicensed node" popup nag from the web
 gui and disables the pve-enterprise repository list. This script is called
@@ -25,22 +25,24 @@ packages installed with PVE by default.
 
 SSH in as root, no need for sudo.
 
-### Installation
+#### Installation
 ```sh
 wget https://raw.githubusercontent.com/foundObjects/pve-nag-buster/master/install.sh
 ```
-# Always read scripts downloaded from the internet before running them as root or with sudo
+#### Always read scripts downloaded from the internet before running them as root or with sudo
 ```sh
 chmod +x install.sh && ./install.sh
 ```
 
-### Uninstall:
+#### Uninstall:
 ```sh
 ./install.sh --uninstall
 ```
-# remove /etc/apt/sources.list.d/pve-no-subscription.list if desired
+#### remove /etc/apt/sources.list.d/pve-no-subscription.list if desired
 
-Reboot the Proxmox Server
+#### Reboot the Proxmox Server
+
+
 
 ### Notes:
 
