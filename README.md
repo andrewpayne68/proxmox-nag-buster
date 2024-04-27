@@ -25,7 +25,8 @@ packages installed with PVE by default.
 
 SSH in as root, no need for sudo.
 
-#### Installation
+
+### Installation
 ```sh
 wget https://raw.githubusercontent.com/foundObjects/pve-nag-buster/master/install.sh
 ```
