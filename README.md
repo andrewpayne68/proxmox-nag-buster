@@ -1,5 +1,5 @@
-## pve-nag-buster 
-https://github.com/foundObjects/pve-nag-buster
+## proxmox-nag-buster 
+Forkedd from https://github.com/foundObjects/pve-nag-buster
 
 `pve-nag-buster` is a dpkg hook script that persistently removes license nags
 from Proxmox VE 6.x and up. Install it once and you won't see another license
@@ -8,11 +8,7 @@ nag until the Proxmox team  changes their web-ui code in a way that breaks the p
 Please support the Proxmox team by [buying a subscription](https://www.proxmox.com/en/proxmox-ve/pricing) if it's within your
 means. High quality open source software like Proxmox needs our support!
 
-### News:
-
-Last updated for: pve-manager/6.4-4/337d6701 (running kernel: 5.4.106-1-pve)
-
-#### How does it work?
+### How does it work?
 
 The included hook script removes the "unlicensed node" popup nag from the web
 gui and disables the pve-enterprise repository list. This script is called
@@ -23,10 +19,12 @@ The installer installs the dpkg hook script, adds the pve-no-subscription repo l
 and calls the hook script once. There are no external dependencies beyond the base
 packages installed with PVE by default.
 
-SSH in as root, no need for sudo.
 
 
 ### Installation
+
+SSH in as root, no need for sudo.
+
 ```sh
 wget https://raw.githubusercontent.com/foundObjects/pve-nag-buster/master/install.sh
 ```
